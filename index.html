@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario de Ciencia</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <header class="text-center mb-4">
+      <h1 class="display-4">Cuestionario de Ciencia</h1>
+      <img src="logo.png" alt="Logo" class="logo">
+    </header>
+    <div class="progress mb-4">
+      <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <main>
+      <form id="quizForm">
+        <div class="card mb-3" id="card1">
+          <div class="card-body">
+            <h5 class="card-title">Preguntas 1-10</h5>
+            <div class="question">
+              <p>1. ¿Qué transporta el conducto deferente?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q1" value="A" id="q1a">
+                <label class="form-check-label" for="q1a">A) Esperma</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q1" value="B" id="q1b">
+                <label class="form-check-label" for="q1b">B) Orina</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q1" value="C" id="q1c">
+                <label class="form-check-label" for="q1c">C) Semen</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>2. ¿Cuál es la función de la uretra en el sistema reproductor masculino?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q2" value="A" id="q2a">
+                <label class="form-check-label" for="q2a">A) Transportar orina y semen</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q2" value="B" id="q2b">
+                <label class="form-check-label" for="q2b">B) Producir espermatozoides</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q2" value="C" id="q2c">
+                <label class="form-check-label" for="q2c">C) Regular la temperatura</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>3. ¿Qué órgano es responsable de la expulsión del semen hacia el exterior del cuerpo?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q3" value="A" id="q3a">
+                <label class="form-check-label" for="q3a">A) Pene</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q3" value="B" id="q3b">
+                <label class="form-check-label" for="q3b">B) Testículos</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q3" value="C" id="q3c">
+                <label class="form-check-label" for="q3c">C) Uretra</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>4. ¿Qué producen las vesículas seminales?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q4" value="A" id="q4a">
+                <label class="form-check-label" for="q4a">A) Líquido nutritivo</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q4" value="B" id="q4b">
+                <label class="form-check-label" for="q4b">B) Esperma</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q4" value="C" id="q4c">
+                <label class="form-check-label" for="q4c">C) Hormonas</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>5. ¿Cuál es la función de la próstata?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q5" value="A" id="q5a">
+                <label class="form-check-label" for="q5a">A) Producir un líquido nutritivo</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q5" value="B" id="q5b">
+                <label class="form-check-label" for="q5b">B) Almacenar espermatozoides</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q5" value="C" id="q5c">
+                <label class="form-check-label" for="q5c">C) Transportar orina</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>6. ¿Qué almacena el epidídimo?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q6" value="A" id="q6a">
+                <label class="form-check-label" for="q6a">A) Esperma</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q6" value="B" id="q6b">
+                <label class="form-check-label" for="q6b">B) Hormonas</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q6" value="C" id="q6c">
+                <label class="form-check-label" for="q6c">C) Orina</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>7. ¿Qué función tienen los testículos en el sistema reproductor masculino?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q7" value="A" id="q7a">
+                <label class="form-check-label" for="q7a">A) Producir espermatozoides y hormonas</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q7" value="B" id="q7b">
+                <label class="form-check-label" for="q7b">B) Regular la temperatura</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q7" value="C" id="q7c">
+                <label class="form-check-label" for="q7c">C) Transportar semen</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>8. ¿Qué función cumplen los oviductos en el sistema reproductor femenino?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q8" value="A" id="q8a">
+                <label class="form-check-label" for="q8a">A) Conectar ovarios con el útero</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q8" value="B" id="q8b">
+                <label class="form-check-label" for="q8b">B) Producir ovocitos</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q8" value="C" id="q8c">
+                <label class="form-check-label" for="q8c">C) Almacenar espermatozoides</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>9. ¿Qué son los ovarios y cuál es su función?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q9" value="A" id="q9a">
+                <label class="form-check-label" for="q9a">A) Producen ovocitos</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q9" value="B" id="q9b">
+                <label class="form-check-label" for="q9b">B) Transportan semen</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q9" value="C" id="q9c">
+                <label class="form-check-label" for="q9c">C) Almacenan hormonas</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>10. ¿Qué ocurre en el útero en caso de no haber fecundación?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q10" value="A" id="q10a">
+                <label class="form-check-label" for="q10a">A) El endometrio se desprende</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q10" value="B" id="q10b">
+                <label class="form-check-label" for="q10b">B) Se produce un nuevo ovocito</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q10" value="C" id="q10c">
+                <label class="form-check-label" for="q10c">C) Se almacenan espermatozoides</label>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary next">Siguiente</button>
+          </div>
+        </div>
+
+        <div class="card mb-3" id="card2" style="display: none;">
+          <div class="card-body">
+            <h5 class="card-title">Preguntas 11-20</h5>
+            <div class="question">
+              <p>11. ¿Cuál es la función principal de la vagina en el sistema reproductor femenino?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q11" value="A" id="q11a">
+                <label class="form-check-label" for="q11a">A) Conectar el útero con el exterior</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q11" value="B" id="q11b">
+                <label class="form-check-label" for="q11b">B) Producir ovocitos</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q11" value="C" id="q11c">
+                <label class="form-check-label" for="q11c">C) Regular el ciclo menstrual</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>12. ¿Qué porcentaje del volumen total del semen aportan las vesículas seminales?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q12" value="A" id="q12a">
+                <label class="form-check-label" for="q12a">A) 60%</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q12" value="B" id="q12b">
+                <label class="form-check-label" for="q12b">B) 30%</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q12" value="C" id="q12c">
+                <label class="form-check-label" for="q12c">C) 10%</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>13. ¿Dónde se produce el encuentro entre el ovocito y el gameto masculino?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q13" value="A" id="q13a">
+                <label class="form-check-label" for="q13a">A) En los oviductos</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q13" value="B" id="q13b">
+                <label class="form-check-label" for="q13b">B) En el útero</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q13" value="C" id="q13c">
+                <label class="form-check-label" for="q13c">C) En los ovarios</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>14. ¿Cuál es el nombre que reciben las células productoras de los testículos?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q14" value="A" id="q14a">
+                <label class="form-check-label" for="q14a">A) Espermatozoides</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q14" value="B" id="q14b">
+                <label class="form-check-label" for="q14b">B) Ovocitos</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q14" value="C" id="q14c">
+                <label class="form-check-label" for="q14c">C) Hormonas</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>15. ¿Qué son los caracteres sexuales primarios y secundarios?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q15" value="A" id="q15a">
+                <label class="form-check-label" for="q15a">A) Órganos reproductores y características desarrolladas durante la pubertad</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q15" value="B" id="q15b">
+                <label class="form-check-label" for="q15b">B) Solo órganos reproductores</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q15" value="C" id="q15c">
+                <label class="form-check-label" for="q15c">C) Solo características desarrolladas</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>16. ¿Qué hormonas sexuales están involucradas en los cambios corporales durante la pubertad?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q16" value="A" id="q16a">
+                <label class="form-check-label" for="q16a">A) Testosterona, progesterona y estrógeno</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q16" value="B" id="q16b">
+                <label class="form-check-label" for="q16b">B) Solo testosterona</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q16" value="C" id="q16c">
+                <label class="form-check-label" for="q16c">C) Estrógeno y adrenalina</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>17. ¿De qué sistemas está formado el sistema musculoesquelético?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q17" value="A" id="q17a">
+                <label class="form-check-label" for="q17a">A) Sistema esquelético y sistema muscular</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q17" value="B" id="q17b">
+                <label class="form-check-label" for="q17b">B) Sistema nervioso y sistema muscular</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q17" value="C" id="q17c">
+                <label class="form-check-label" for="q17c">C) Sistema circulatorio y sistema esquelético</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>18. ¿Cuál es la función principal del tejido musculoesquelético?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q18" value="A" id="q18a">
+                <label class="form-check-label" for="q18a">A) Locomoción, estabilidad, producción de calor y protección</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q18" value="B" id="q18b">
+                <label class="form-check-label" for="q18b">B) Producir hormonas</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q18" value="C" id="q18c">
+                <label class="form-check-label" for="q18c">C) Regular la temperatura</label>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary next">Siguiente</button>
+          </div>
+        </div>
+
+        <div class="card mb-3" id="card3" style="display: none;">
+          <div class="card-body">
+            <h5 class="card-title">Preguntas 21-30</h5>
+            <div class="question">
+              <p>19. ¿Qué función cumplen los músculos en el sistema musculoesquelético?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q19" value="A" id="q19a">
+                <label class="form-check-label" for="q19a">A) Fijan los músculos a los huesos</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q19" value="B" id="q19b">
+                <label class="form-check-label" for="q19b">B) Producen hormonas</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q19" value="C" id="q19c">
+                <label class="form-check-label" for="q19c">C) Transportan sangre</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>20. ¿Qué es el sistema nervioso?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q20" value="A" id="q20a">
+                <label class="form-check-label" for="q20a">A) Un conjunto de órganos que coordinan el cuerpo humano</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q20" value="B" id="q20b">
+                <label class="form-check-label" for="q20b">B) Un sistema que regula la temperatura</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q20" value="C" id="q20c">
+                <label class="form-check-label" for="q20c">C) Un conjunto de órganos que producen hormonas</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>21. ¿Qué funciones tiene el sistema nervioso?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q21" value="A" id="q21a">
+                <label class="form-check-label" for="q21a">A) Sensorial, integradora y motora</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q21" value="B" id="q21b">
+                <label class="form-check-label" for="q21b">B) Solo sensorial</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q21" value="C" id="q21c">
+                <label class="form-check-label" for="q21c">C) Solo motora</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>22. ¿Qué permiten los órganos sensoriales?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q22" value="A" id="q22a">
+                <label class="form-check-label" for="q22a">A) Percibir el entorno</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q22" value="B" id="q22b">
+                <label class="form-check-label" for="q22b">B) Regular la temperatura</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q22" value="C" id="q22c">
+                <label class="form-check-label" for="q22c">C) Producir hormonas</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>23. ¿Cuál es la función de la mente en relación con los estímulos?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q23" value="A" id="q23a">
+                <label class="form-check-label" for="q23a">A) Analizar y elaborar respuestas</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q23" value="B" id="q23b">
+                <label class="form-check-label" for="q23b">B) Almacenar información</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q23" value="C" id="q23c">
+                <label class="form-check-label" for="q23c">C) Regular la temperatura</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>24. ¿Qué son los caracteres sexuales primarios?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q24" value="A" id="q24a">
+                <label class="form-check-label" for="q24a">A) Órganos sexuales presentes desde el nacimiento</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q24" value="B" id="q24b">
+                <label class="form-check-label" for="q24b">B) Características desarrolladas durante la pubertad</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q24" value="C" id="q24c">
+                <label class="form-check-label" for="q24c">C) Hormonas</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>25. ¿Cómo se desarrollan los caracteres sexuales secundarios?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q25" value="A" id="q25a">
+                <label class="form-check-label" for="q25a">A) De distinta manera según el cuerpo de cada persona</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q25" value="B" id="q25b">
+                <label class="form-check-label" for="q25b">B) De manera uniforme en todas las personas</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q25" value="C" id="q25c">
+                <label class="form-check-label" for="q25c">C) No se desarrollan</label>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary next">Siguiente</button>
+          </div>
+        </div>
+
+        <div class="card mb-3" id="card4" style="display: none;">
+          <div class="card-body">
+            <h5 class="card-title">Preguntas 26-31</h5>
+            <div class="question">
+              <p>26. ¿Qué órganos componen el sistema reproductor femenino?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q26" value="A" id="q26a">
+                <label class="form-check-label" for="q26a">A) Vagina, útero, trompas de Falopio y ovarios</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q26" value="B" id="q26b">
+                <label class="form-check-label" for="q26b">B) Testículos y pene</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q26" value="C" id="q26c">
+                <label class="form-check-label" for="q26c">C) Epidídimo y próstata</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>27. ¿Qué órganos componen el sistema reproductor masculino?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q27" value="A" id="q27a">
+                <label class="form-check-label" for="q27a">A) Testículos, epidídimo, vasos deferentes, vesículas seminales, próstata, uretra y pene</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q27" value="B" id="q27b">
+                <label class="form-check-label" for="q27b">B) Ovarios y útero</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q27" value="C" id="q27c">
+                <label class="form-check-label" for="q27c">C) Vagina y trompas de Falopio</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>28. ¿Qué sistemas son necesarios para que el cuerpo humano funcione correctamente?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q28" value="A" id="q28a">
+                <label class="form-check-label" for="q28a">A) Sistema musculoesquelético y sistema nervioso</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q28" value="B" id="q28b">
+                <label class="form-check-label" for="q28b">B) Sistema nervioso y sistema circulatorio</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q28" value="C" id="q28c">
+                <label class="form-check-label" for="q28c">C) Sistema respiratorio y sistema digestivo</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>29. ¿Por qué es importante el cuidado del cuerpo?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q29" value="A" id="q29a">
+                <label class="form-check-label" for="q29a">A) Para estar saludables</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q29" value="B" id="q29b">
+                <label class="form-check-label" for="q29b">B) Para aumentar la fuerza</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q29" value="C" id="q29c">
+                <label class="form-check-label" for="q29c">C) Para mejorar la apariencia</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>30. ¿Qué función cumplen las vesículas seminales en el semen?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q30" value="A" id="q30a">
+                <label class="form-check-label" for="q30a">A) Producen un líquido que nutre a los espermatozoides</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q30" value="B" id="q30b">
+                <label class="form-check-label" for="q30b">B) Almacenan espermatozoides</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q30" value="C" id="q30c">
+                <label class="form-check-label" for="q30c">C) Transportan orina</label>
+              </div>
+            </div>
+            <div class="question">
+              <p>31. ¿Cuál es la principal función de la próstata en el sistema reproductor masculino?</p>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q31" value="A" id="q31a">
+                <label class="form-check-label" for="q31a">A) Producir un líquido que ayuda a la movilidad de los espermatozoides</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q31" value="B" id="q31b">
+                <label class="form-check-label" for="q31b">B) Regular la temperatura de los testículos</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="q31" value="C" id="q31c">
+                <label class="form-check-label" for="q31c">C) Almacenar espermatozoides</label>
+              </div>
+            </div>
+            <button type="button" class="btn btn-success submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+      <div id="result" class="result text-center mt-4" style="display: none;"></div>
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
